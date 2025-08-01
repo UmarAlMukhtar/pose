@@ -1,0 +1,2 @@
+# This file ensures the train/labels directory is tracked by Git
+# Training labels will be organized here during dataset preparation

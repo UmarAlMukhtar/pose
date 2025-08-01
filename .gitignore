@@ -1,0 +1,298 @@
+# YOLO11 Pose Estimation Project .gitignore
+
+# =============================================================================
+# DATA FILES (Large files that shouldn't be in Git)
+# =============================================================================
+
+# Videos (usually large files)
+data/videos/*.mp4
+data/videos/*.avi
+data/videos/*.mov
+data/videos/*.mkv
+data/videos/*.wmv
+data/videos/*.flv
+data/videos/*.MP4
+data/videos/*.AVI
+data/videos/*.MOV
+
+# Extracted frames (can be regenerated)
+data/frames/**/*.jpg
+data/frames/**/*.jpeg
+data/frames/**/*.png
+data/frames/**/*.JPG
+data/frames/**/*.JPEG
+data/frames/**/*.PNG
+
+# Dataset files (can be large)
+data/train/**/*.jpg
+data/train/**/*.jpeg
+data/train/**/*.png
+data/val/**/*.jpg
+data/val/**/*.jpeg
+data/val/**/*.png
+data/test/**/*.jpg
+data/test/**/*.jpeg
+data/test/**/*.png
+
+# Trained models (large files)
+models/*.pt
+models/*.onnx
+models/*.engine
+models/*.trt
+
+# Training results and logs
+results/*/weights/*.pt
+results/*/
+!results/.gitkeep
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# =============================================================================
+# JUPYTER NOTEBOOKS
+# =============================================================================
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# =============================================================================
+# MACHINE LEARNING / DATA SCIENCE
+# =============================================================================
+
+# Weights & Biases
+wandb/
+
+# TensorBoard logs
+logs/
+tensorboard_logs/
+
+# Model checkpoints and cache
+*.pth
+*.pkl
+*.pickle
+*cache*
+.cache/
+
+# ONNX models
+*.onnx
+
+# TensorRT models
+*.engine
+*.trt
+
+# =============================================================================
+# DATASETS AND ANNOTATIONS
+# =============================================================================
+
+# Keep annotation files but exclude large datasets
+!data/annotations/*.txt
+!data/annotations/*.json
+!data/annotations/*.xml
+
+# Metadata files (usually small, can be kept)
+!data/**/*.json
+!data/**/*.yaml
+!data/**/*.yml
+!data/**/*.csv
+!data/**/*.txt
+
+# =============================================================================
+# OPERATING SYSTEM
+# =============================================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# EDITORS AND IDEs
+# =============================================================================
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# TEMPORARY FILES
+# =============================================================================
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.out
+
+# Backup files
+*.bak
+*.backup
+
+# =============================================================================
+# PROJECT SPECIFIC
+# =============================================================================
+
+# Custom experiment directories
+experiments/
+outputs/
+runs/
+
+# Downloaded pretrained models (can be re-downloaded)
+yolo*.pt
+
+# Configuration overrides (personal settings)
+config_local.yaml
+settings_local.py
+
+# =============================================================================
+# KEEP THESE FILES (Important for project structure)
+# =============================================================================
+
+# Always keep .gitkeep files
+!**/.gitkeep
+
+# Keep documentation and configuration
+!*.md
+!*.txt
+!*.yaml
+!*.yml
+!*.json
+!requirements.txt
+!README.md
+!TRAINING_GUIDE.md
+
+# Keep Python scripts
+!scripts/*.py
+!*.py
+
+# Keep Jupyter notebooks
+!notebooks/*.ipynb
+
+# Keep configuration files
+!configs/*.yaml
+!configs/*.yml

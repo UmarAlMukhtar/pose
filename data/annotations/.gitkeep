@@ -1,0 +1,4 @@
+# This file ensures the annotations directory is tracked by Git
+# YOLO format pose annotations (.txt files) should be placed here
+# Each .txt file should correspond to a frame in the frames directory
+# Format: class_id x_center y_center width height x1 y1 v1 x2 y2 v2 ... x17 y17 v17

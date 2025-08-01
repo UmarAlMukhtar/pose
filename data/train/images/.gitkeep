@@ -1,0 +1,2 @@
+# This file ensures the train/images directory is tracked by Git
+# Training images will be organized here during dataset preparation
