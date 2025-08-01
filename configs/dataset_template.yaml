@@ -1,0 +1,32 @@
+# YOLO11 Pose Estimation Training Configuration
+
+# Dataset configuration
+path: ./data  # dataset root dir
+train: train/images  # train images (relative to 'path')
+val: val/images  # val images (relative to 'path')
+test: test/images  # test images (relative to 'path')
+
+# Classes
+nc: 1  # number of classes
+names:
+  0: person
+
+# Keypoints configuration for pose estimation
+kpt_shape: [17, 3]  # 17 keypoints, each with x, y, visibility
+
+# Keypoint names (COCO format)
+# 0: nose
+# 1: left_eye, 2: right_eye
+# 3: left_ear, 4: right_ear
+# 5: left_shoulder, 6: right_shoulder
+# 7: left_elbow, 8: right_elbow
+# 9: left_wrist, 10: right_wrist
+# 11: left_hip, 12: right_hip
+# 13: left_knee, 14: right_knee
+# 15: left_ankle, 16: right_ankle
+
+# Important keypoints for throwing detection:
+# - Shoulders (5, 6): Body orientation
+# - Elbows (7, 8): Arm bending
+# - Wrists (9, 10): Hand position and motion
+# - Hips (11, 12): Lower body stability
